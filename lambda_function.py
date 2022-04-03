@@ -6,6 +6,7 @@ import csv
 from  utilities import *
 from secutityhub import SecutityHub
 from send_email import send_email_to_recipients
+from push_to_s3_bucket import upload_file
 
 #Set these variables in Lambda Environments Section
 FILENAME=os.environ.get("FILENAME")
@@ -57,4 +58,5 @@ def lambda_handler(event,context):
                     "Description":security_hub_object.Description,
                     "UpdatedAt":convert_from_str_date(security_hub_object.UpdatedAt) })
             send_email_to_recipients(DIRECTORY,EMAIL_TO, SMTP_HOST, PORT, EMAIL_FROM, PASSWORD)
+            #upload_file(filename,bucket_name,object)
     get_info_by_company_name(companyname='AWS')       
