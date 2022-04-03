@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 #from email.mime.application import MIMEApplication
 import os
 import mimetypes
-
+#Create a directory and keep all files in that location that will attach all files.
 def send_email_to_recipients(directory,to_email, server, port,from_email, password):
     
     # Create the message
