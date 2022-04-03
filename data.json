@@ -1,0 +1,1451 @@
+{
+	"ResponseMetadata": {
+		"RequestId": "dd512a7e-3dd9-471f-83a0-d5c6c8f97b46",
+		"HTTPStatusCode": 200,
+		"HTTPHeaders": {
+			"date": "Fri, 01 Apr 2022 02:50:11 GMT",
+			"content-type": "application/json",
+			"content-length": "69950",
+			"connection": "keep-alive",
+			"x-amzn-requestid": "dd512a7e-3dd9-471f-83a0-d5c6c8f97b46",
+			"access-control-allow-origin": "*",
+			"access-control-allow-headers": "Authorization,Date,X-Amz-Date,X-Amz-Security-Token,X-Amz-Target,content-type,x-amz-content-sha256,x-amz-user-agent,x-amzn-platform-id,x-amzn-trace-id",
+			"x-amz-apigw-id": "P4U_lFRLoAMFgzA=",
+			"access-control-allow-methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+			"access-control-expose-headers": "x-amzn-errortype,x-amzn-requestid,x-amzn-errormessage,x-amzn-trace-id,x-amz-apigw-id,date",
+			"x-amzn-trace-id": "Root=1-62466863-6cfd603d3bb2dd8e7cbfcb21",
+			"access-control-max-age": "86400"
+		},
+		"RetryAttempts": 0
+	},
+	"Findings": [{
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/e6d7f2cc-d4c7-42f5-9371-5c59c7eb63cc",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:48:11.777Z",
+		"LastObservedAt": "2022-04-01T02:49:36.885Z",
+		"CreatedAt": "2022-04-01T02:48:11.777Z",
+		"UpdatedAt": "2022-04-01T02:49:30.815Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.2 Lambda functions should use supported runtimes",
+		"Description": "This AWS control checks that the lambda function settings for runtimes, match the expected values set for the supported runtimes for each language. The supported runtimes this control checks for are: nodejs14.x, nodejs12.x, python3.8, python3.7, python3.6, java11, java8, go1.x, dotnet6, dotnetcore3.1, ruby2.7.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-settings-check-ba6e1148",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:Securityhub_findings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/e6d7f2cc-d4c7-42f5-9371-5c59c7eb63cc"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:Securityhub_findings",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "fI06ZlRH/KN6Ra3twvdRllUYaxv182Tjx0qNWNlKIhI=",
+					"FunctionName": "Securityhub_findings",
+					"Handler": "lambda_function.lambda_handler",
+					"LastModified": "2022-04-01T02:44:41.390Z",
+					"MemorySize": 128,
+					"RevisionId": "e6256d44-b3b8-47bd-883d-c4763207584b",
+					"Role": "arn:aws:iam::376085193890:role/Lambda_role_securityhub",
+					"Runtime": "python3.9",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/fe3c7475-03d0-4725-88fc-1a19cf75716a",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:48:13.923Z",
+		"LastObservedAt": "2022-04-01T02:48:24.485Z",
+		"CreatedAt": "2022-04-01T02:48:13.923Z",
+		"UpdatedAt": "2022-04-01T02:48:13.923Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.1 Lambda function policies should prohibit public access",
+		"Description": "This control checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access, the control fails.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-879c54a5",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:Securityhub_findings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/fe3c7475-03d0-4725-88fc-1a19cf75716a"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:Securityhub_findings",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "fI06ZlRH/KN6Ra3twvdRllUYaxv182Tjx0qNWNlKIhI=",
+					"FunctionName": "Securityhub_findings",
+					"Handler": "lambda_function.lambda_handler",
+					"LastModified": "2022-04-01T02:44:41.390Z",
+					"MemorySize": 128,
+					"RevisionId": "e6256d44-b3b8-47bd-883d-c4763207584b",
+					"Role": "arn:aws:iam::376085193890:role/Lambda_role_securityhub",
+					"Runtime": "python3.9",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/fc2e3188-eb4c-4a87-9821-14c2a487c5f7",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-03-29T01:19:11.519Z",
+		"LastObservedAt": "2022-04-01T02:45:53.449Z",
+		"CreatedAt": "2022-03-29T01:19:11.519Z",
+		"UpdatedAt": "2022-04-01T02:45:53.449Z",
+		"Severity": {
+			"Product": 90,
+			"Label": "CRITICAL",
+			"Normalized": 90,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "RDS.1 RDS snapshot should be private",
+		"Description": "This AWS control checks if Amazon Relational Database Service (Amazon RDS) snapshots are public.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "RDS.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-rds-snapshots-public-prohibited-c1f779f0",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-postgres-testing-2022-03-19-03-47",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/fc2e3188-eb4c-4a87-9821-14c2a487c5f7"
+		},
+		"Resources": [{
+			"Type": "AwsRdsDbSnapshot",
+			"Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-postgres-testing-2022-03-19-03-47",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}, {
+				"ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS",
+				"Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasnt been updated in 3 days. This could be due to the resource being deleted or the control being disabled."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "CRITICAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/c507e371-1324-471e-9494-a95e3e4b1585",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-03-29T01:19:11.520Z",
+		"LastObservedAt": "2022-04-01T02:37:20.079Z",
+		"CreatedAt": "2022-03-29T01:19:11.520Z",
+		"UpdatedAt": "2022-04-01T02:37:20.080Z",
+		"Severity": {
+			"Product": 90,
+			"Label": "CRITICAL",
+			"Normalized": 90,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "RDS.1 RDS snapshot should be private",
+		"Description": "This AWS control checks if Amazon Relational Database Service (Amazon RDS) snapshots are public.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "RDS.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-rds-snapshots-public-prohibited-c1f779f0",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-mysql-fortify-ssc-db-2022-03-20-03-12",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/c507e371-1324-471e-9494-a95e3e4b1585"
+		},
+		"Resources": [{
+			"Type": "AwsRdsDbSnapshot",
+			"Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-mysql-fortify-ssc-db-2022-03-20-03-12",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}, {
+				"ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS",
+				"Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasnt been updated in 3 days. This could be due to the resource being deleted or the control being disabled."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "CRITICAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/2743843e-05b6-4749-9016-d901c9652b33",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-02-03T04:02:47.421Z",
+		"LastObservedAt": "2022-04-01T02:28:42.552Z",
+		"CreatedAt": "2022-02-03T04:02:47.421Z",
+		"UpdatedAt": "2022-04-01T02:28:42.560Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.1 Lambda function policies should prohibit public access",
+		"Description": "This control checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access, the control fails.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-879c54a5",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/2743843e-05b6-4749-9016-d901c9652b33"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "x/kgFYxKfDoeE5IzX98pJZNdD8hvH2tEammqr+H/K7w=",
+					"FunctionName": "securityhub-lambdatesting",
+					"Handler": "index.handler",
+					"LastModified": "2022-02-04T03:59:15.000Z",
+					"MemorySize": 128,
+					"RevisionId": "3f985aa1-30c5-40f8-b976-74480777f9a6",
+					"Role": "arn:aws:iam::376085193890:role/SNS-Lambdarole",
+					"Runtime": "nodejs14.x",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/b7fbbbf2-4a7d-4372-8b01-5508a16f6b2c",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-02-03T03:14:31.281Z",
+		"LastObservedAt": "2022-04-01T02:28:39.769Z",
+		"CreatedAt": "2022-02-03T03:14:31.281Z",
+		"UpdatedAt": "2022-04-01T02:28:39.787Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.1 Lambda function policies should prohibit public access",
+		"Description": "This control checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access, the control fails.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-879c54a5",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/b7fbbbf2-4a7d-4372-8b01-5508a16f6b2c"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "q7lR+hS68Lnz4yy8hHqpUfB7DHDoUI+BcaVSIgT2tyk=",
+					"FunctionName": "lambda-securityhubfindings",
+					"Handler": "index.handler",
+					"LastModified": "2022-02-03T03:16:05.782Z",
+					"MemorySize": 128,
+					"RevisionId": "48a45ee0-0af2-4ac7-86a5-664736620ab2",
+					"Role": "arn:aws:iam::376085193890:role/lambda-role",
+					"Runtime": "nodejs14.x",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/8fe0f1c5-557c-453f-a631-3430c15f7d25",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:28:32.005Z",
+		"LastObservedAt": "2022-04-01T02:28:42.560Z",
+		"CreatedAt": "2022-04-01T02:28:32.005Z",
+		"UpdatedAt": "2022-04-01T02:28:32.005Z",
+		"Severity": {
+			"Product": 90,
+			"Label": "CRITICAL",
+			"Normalized": 90,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.1 Lambda function policies should prohibit public access",
+		"Description": "This control checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access, the control fails.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-879c54a5",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/8fe0f1c5-557c-453f-a631-3430c15f7d25"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "CRITICAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/0917961d-c85c-4fd5-b654-190f72a44694",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:28:32.005Z",
+		"LastObservedAt": "2022-04-01T02:28:39.787Z",
+		"CreatedAt": "2022-04-01T02:28:32.005Z",
+		"UpdatedAt": "2022-04-01T02:28:32.005Z",
+		"Severity": {
+			"Product": 90,
+			"Label": "CRITICAL",
+			"Normalized": 90,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.1 Lambda function policies should prohibit public access",
+		"Description": "This control checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access. If the Lambda function policy allows public access, the control fails.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-public-access-prohibited-879c54a5",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.1/finding/0917961d-c85c-4fd5-b654-190f72a44694"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "CRITICAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/88a86ec0-b2c8-491f-8c6c-f2c4eb8a5f84",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-02-03T03:14:20.511Z",
+		"LastObservedAt": "2022-04-01T02:28:19.791Z",
+		"CreatedAt": "2022-02-03T03:14:20.511Z",
+		"UpdatedAt": "2022-04-01T02:28:19.807Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.2 Lambda functions should use supported runtimes",
+		"Description": "This AWS control checks that the lambda function settings for runtimes, match the expected values set for the supported runtimes for each language. The supported runtimes this control checks for are: nodejs14.x, nodejs12.x, python3.8, python3.7, python3.6, java11, java8, go1.x, dotnet6, dotnetcore3.1, ruby2.7.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-settings-check-ba6e1148",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/88a86ec0-b2c8-491f-8c6c-f2c4eb8a5f84"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "q7lR+hS68Lnz4yy8hHqpUfB7DHDoUI+BcaVSIgT2tyk=",
+					"FunctionName": "lambda-securityhubfindings",
+					"Handler": "index.handler",
+					"LastModified": "2022-02-03T03:16:05.782Z",
+					"MemorySize": 128,
+					"RevisionId": "48a45ee0-0af2-4ac7-86a5-664736620ab2",
+					"Role": "arn:aws:iam::376085193890:role/lambda-role",
+					"Runtime": "nodejs14.x",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/8dfc6343-8d34-4eb6-a19a-0579ba21aa2b",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-02-03T04:03:59.393Z",
+		"LastObservedAt": "2022-04-01T02:28:19.695Z",
+		"CreatedAt": "2022-02-03T04:03:59.393Z",
+		"UpdatedAt": "2022-04-01T02:28:19.715Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.2 Lambda functions should use supported runtimes",
+		"Description": "This AWS control checks that the lambda function settings for runtimes, match the expected values set for the supported runtimes for each language. The supported runtimes this control checks for are: nodejs14.x, nodejs12.x, python3.8, python3.7, python3.6, java11, java8, go1.x, dotnet6, dotnetcore3.1, ruby2.7.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-settings-check-ba6e1148",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/8dfc6343-8d34-4eb6-a19a-0579ba21aa2b"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsLambdaFunction": {
+					"CodeSha256": "x/kgFYxKfDoeE5IzX98pJZNdD8hvH2tEammqr+H/K7w=",
+					"FunctionName": "securityhub-lambdatesting",
+					"Handler": "index.handler",
+					"LastModified": "2022-02-04T03:59:15.000Z",
+					"MemorySize": 128,
+					"RevisionId": "3f985aa1-30c5-40f8-b976-74480777f9a6",
+					"Role": "arn:aws:iam::376085193890:role/SNS-Lambdarole",
+					"Runtime": "nodejs14.x",
+					"Timeout": 3,
+					"TracingConfig": {
+						"Mode": "PassThrough"
+					},
+					"Version": "$LATEST"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/a7d7df60-24a9-422e-b58d-fe04ab708944",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:28:12.702Z",
+		"LastObservedAt": "2022-04-01T02:28:19.715Z",
+		"CreatedAt": "2022-04-01T02:28:12.702Z",
+		"UpdatedAt": "2022-04-01T02:28:12.702Z",
+		"Severity": {
+			"Product": 40,
+			"Label": "MEDIUM",
+			"Normalized": 40,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.2 Lambda functions should use supported runtimes",
+		"Description": "This AWS control checks that the lambda function settings for runtimes, match the expected values set for the supported runtimes for each language. The supported runtimes this control checks for are: nodejs14.x, nodejs12.x, python3.8, python3.7, python3.6, java11, java8, go1.x, dotnet6, dotnetcore3.1, ruby2.7.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-settings-check-ba6e1148",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/a7d7df60-24a9-422e-b58d-fe04ab708944"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:securityhub-lambdatesting",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "MEDIUM",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/043c274e-4f9d-47af-934a-e73bc0d79fd8",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-04-01T02:28:12.702Z",
+		"LastObservedAt": "2022-04-01T02:28:19.807Z",
+		"CreatedAt": "2022-04-01T02:28:12.702Z",
+		"UpdatedAt": "2022-04-01T02:28:12.702Z",
+		"Severity": {
+			"Product": 40,
+			"Label": "MEDIUM",
+			"Normalized": 40,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "Lambda.2 Lambda functions should use supported runtimes",
+		"Description": "This AWS control checks that the lambda function settings for runtimes, match the expected values set for the supported runtimes for each language. The supported runtimes this control checks for are: nodejs14.x, nodejs12.x, python3.8, python3.7, python3.6, java11, java8, go1.x, dotnet6, dotnetcore3.1, ruby2.7.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "Lambda.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/Lambda.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-lambda-function-settings-check-ba6e1148",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/Lambda.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/Lambda.2/finding/043c274e-4f9d-47af-934a-e73bc0d79fd8"
+		},
+		"Resources": [{
+			"Type": "AwsLambdaFunction",
+			"Id": "arn:aws:lambda:us-east-1:376085193890:function:lambda-securityhubfindings",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "MEDIUM",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Software and Configuration Checks/Industry and Regulatory Standards/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/3a148942-e06e-4b36-af9e-ff2728edc6eb",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2022-03-29T01:19:11.519Z",
+		"LastObservedAt": "2022-04-01T02:27:58.123Z",
+		"CreatedAt": "2022-03-29T01:19:11.519Z",
+		"UpdatedAt": "2022-04-01T02:27:58.123Z",
+		"Severity": {
+			"Product": 90,
+			"Label": "CRITICAL",
+			"Normalized": 90,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "RDS.1 RDS snapshot should be private",
+		"Description": "This AWS control checks if Amazon Relational Database Service (Amazon RDS) snapshots are public.",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "RDS.1",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/RDS.1/remediation",
+			"RelatedAWSResources:0/name": "securityhub-rds-snapshots-public-prohibited-c1f779f0",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/RDS.1",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"aws/securityhub/annotation": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation.",
+			"Resources:0/Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-db-01-2022-03-19-03-42",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/RDS.1/finding/3a148942-e06e-4b36-af9e-ff2728edc6eb"
+		},
+		"Resources": [{
+			"Type": "AwsRdsDbSnapshot",
+			"Id": "arn:aws:rds:us-east-1:376085193890:snapshot:rds:hios-dev-db-01-2022-03-19-03-42",
+			"Partition": "aws",
+			"Region": "us-east-1"
+		}],
+		"Compliance": {
+			"Status": "NOT_AVAILABLE",
+			"StatusReasons": [{
+				"ReasonCode": "CONFIG_RETURNS_NOT_APPLICABLE",
+				"Description": "This finding has a compliance status of NOT AVAILABLE because AWS Config sent Security Hub a finding with a compliance state of Not Applicable. The potential reasons for a Not Applicable finding from Config are that (1) a resource has been moved out of scope of the Config rule; (2) the Config rule has been deleted; (3) the resource has been deleted; or (4) the logic of the Config rule itself includes scenarios where Not Applicable is returned. The specific reason why Not Applicable is returned is not available in the Config rule evaluation."
+			}, {
+				"ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS",
+				"Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasnt been updated in 3 days. This could be due to the resource being deleted or the control being disabled."
+			}]
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "NEW"
+		},
+		"RecordState": "ARCHIVED",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "CRITICAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/fae4ca00-5a5a-4256-8264-064b6c20d273",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-07-10T02:18:09.101Z",
+		"LastObservedAt": "2022-04-01T02:25:31.512Z",
+		"CreatedAt": "2021-07-10T02:18:09.101Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::informatica-log",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/fae4ca00-5a5a-4256-8264-064b6c20d273"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::informatica-log",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2019-02-08T20:05:43.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/e98cefeb-e2d9-4f06-a12c-bf3a461b0c24",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-12-28T22:23:17.023Z",
+		"LastObservedAt": "2022-04-01T02:25:24.708Z",
+		"CreatedAt": "2021-12-28T22:23:17.023Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::gov-cms-hc-hios-cloud-config",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/e98cefeb-e2d9-4f06-a12c-bf3a461b0c24"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::gov-cms-hc-hios-cloud-config",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2021-12-28T22:21:22.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/d1f72252-9bac-4788-85ab-90a02364799f",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-08-11T16:26:27.437Z",
+		"LastObservedAt": "2022-04-01T02:25:22.931Z",
+		"CreatedAt": "2021-08-11T16:26:27.437Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::gov-cms-hc-hios-mgmt-access-logs",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/d1f72252-9bac-4788-85ab-90a02364799f"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::gov-cms-hc-hios-mgmt-access-logs",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2021-08-11T16:23:56.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/d0028410-8d9b-4fe5-92b9-90591691728c",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-07-10T02:18:09.100Z",
+		"LastObservedAt": "2022-04-01T02:25:25.567Z",
+		"CreatedAt": "2021-07-10T02:18:09.100Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::aws-hhs-cms-mitg-ffm-hios",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/d0028410-8d9b-4fe5-92b9-90591691728c"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::aws-hhs-cms-mitg-ffm-hios",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2018-06-22T05:07:33.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/ca53e1da-c9b6-494d-a158-b5a075ac6377",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-08-24T15:46:19.343Z",
+		"LastObservedAt": "2022-04-01T02:25:27.854Z",
+		"CreatedAt": "2021-08-24T15:46:19.343Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::gov-cms-hc-hios-mgmt-devops",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/ca53e1da-c9b6-494d-a158-b5a075ac6377"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::gov-cms-hc-hios-mgmt-devops",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2021-08-24T15:43:55.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/be4044a6-0ee6-4c7b-a242-84d294b52550",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-09-01T18:35:02.754Z",
+		"LastObservedAt": "2022-04-01T02:25:26.231Z",
+		"CreatedAt": "2021-09-01T18:35:02.754Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::gov-cms-hc-hios-impl-efs-backups",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/be4044a6-0ee6-4c7b-a242-84d294b52550"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::gov-cms-hc-hios-impl-efs-backups",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2021-09-01T18:32:32.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}, {
+		"SchemaVersion": "2018-10-08",
+		"Id": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/95277772-ea0c-4ed8-8932-59646ee2a62d",
+		"ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+		"ProductName": "Security Hub",
+		"CompanyName": "AWS",
+		"Region": "us-east-1",
+		"GeneratorId": "aws-foundational-security-best-practices/v/1.0.0/S3.2",
+		"AwsAccountId": "376085193890",
+		"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"],
+		"FirstObservedAt": "2021-07-10T02:18:09.101Z",
+		"LastObservedAt": "2022-04-01T02:25:27.015Z",
+		"CreatedAt": "2021-07-10T02:18:09.101Z",
+		"UpdatedAt": "2022-04-01T02:25:16.899Z",
+		"Severity": {
+			"Product": 0,
+			"Label": "INFORMATIONAL",
+			"Normalized": 0,
+			"Original": "INFORMATIONAL"
+		},
+		"Title": "S3.2 S3 buckets should prohibit public read access",
+		"Description": "This AWS control checks whether your S3 buckets allow public read access by evaluating the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).",
+		"Remediation": {
+			"Recommendation": {
+				"Text": "For directions on how to fix this issue, consult the AWS Security Hub Foundational Security Best Practices documentation.",
+				"Url": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation"
+			}
+		},
+		"ProductFields": {
+			"StandardsArn": "arn:aws:securityhub:::standards/aws-foundational-security-best-practices/v/1.0.0",
+			"StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0",
+			"ControlId": "S3.2",
+			"RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/S3.2/remediation",
+			"RelatedAWSResources:0/name": "securityhub-s3-bucket-public-read-prohibited-54b20fa9",
+			"RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+			"StandardsControlArn": "arn:aws:securityhub:us-east-1:376085193890:control/aws-foundational-security-best-practices/v/1.0.0/S3.2",
+			"aws/securityhub/ProductName": "Security Hub",
+			"aws/securityhub/CompanyName": "AWS",
+			"Resources:0/Id": "arn:aws:s3:::376085193890-us-east-1",
+			"aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:376085193890:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.2/finding/95277772-ea0c-4ed8-8932-59646ee2a62d"
+		},
+		"Resources": [{
+			"Type": "AwsS3Bucket",
+			"Id": "arn:aws:s3:::376085193890-us-east-1",
+			"Partition": "aws",
+			"Region": "us-east-1",
+			"Details": {
+				"AwsS3Bucket": {
+					"OwnerId": "f39386fb377bc2a12cf4c36058c42b6b3996fad12f177faa20883db45eb16d9d",
+					"CreatedAt": "2020-07-25T09:58:00.000Z"
+				}
+			}
+		}],
+		"Compliance": {
+			"Status": "PASSED"
+		},
+		"WorkflowState": "NEW",
+		"Workflow": {
+			"Status": "RESOLVED"
+		},
+		"RecordState": "ACTIVE",
+		"FindingProviderFields": {
+			"Severity": {
+				"Label": "INFORMATIONAL",
+				"Original": "INFORMATIONAL"
+			},
+			"Types": ["Effects/Data Exposure/AWS-Foundational-Security-Best-Practices"]
+		}
+	}],
+	"NextToken": "U2FsdGVkX18/iD3AoM93G7dhZ4UuutmsKt3hPmFewRda0apRHRY4+EV4Bm2NAZRBAJrCKWiHmHmJp+7FREZ+Fv9Fu4X/bn5zwKpS8TCLAUQtt52IRBKlcODj1xxJZbJtWkyOg+9QqKqX8jsMm/ZasPAsda5QNtyUc0ghHToYvTHQdywz9UkD1izqBT/8pf7f2d7XEyHy4Y0ccLk1aSb087AV9AqgLefwJIN4/5Xgo3zeiiR5fKxOqEsJfNJ7SRSupwtyzyjHbbmbWj5FWi3KlPKd1TCCegBi64Jro5tMOiHnnQuMIZnjEV9+dbNMkKr6TyMEHxen4oIMmkrcdOesUFO+bFb9vi5/Qn1TM9AQlsLQ+5PdAq7xIX7WPL6KWDSe5U0i/Ff3dRGyhTpMhaaytLTNVzs5Qt5BUrDIwknAtp6jMEIe42YjRwYqYjxrc+Nge+6ZRIENp+yJ5g0FxutpYQ=="
+}
